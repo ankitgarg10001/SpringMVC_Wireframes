@@ -1,0 +1,169 @@
+{
+	"info": {
+		"name": "Practice SpringMVC",
+		"_postman_id": "08872d1b-7c09-a88f-54f6-bb51835d283c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add dummy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/SpringMVC/rest/emp/dummy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpringMVC",
+						"rest",
+						"emp",
+						"dummy"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/SpringMVC/rest/emps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpringMVC",
+						"rest",
+						"emps"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/SpringMVC/rest/emp/9999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpringMVC",
+						"rest",
+						"emp",
+						"9999"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 9998,\n    \"name\": \"Dummy1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpringMVC/rest/emp/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpringMVC",
+						"rest",
+						"emp",
+						"create"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete by ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 9998,\n    \"name\": \"Dummy1\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/SpringMVC/rest/emp/delete/9998",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpringMVC",
+						"rest",
+						"emp",
+						"delete",
+						"9998"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get resource",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/SpringMVC/resources/Practice%20SpringMVC.postman_collection.json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"SpringMVC",
+						"resources",
+						"Practice%20SpringMVC.postman_collection.json"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
